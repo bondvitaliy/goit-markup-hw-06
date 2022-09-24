@@ -285,10 +285,6 @@ ol {
   flex-direction: column;
 }
 
-/* .about {
-  background-color: var(--bg-main-color);
-} */
-
 .about-heading-specifity {
   color: var(--color-hd);
   font-weight: 700;
@@ -421,7 +417,6 @@ ol {
 
 .link-portfolio-item {
   display: block;
-  /* position: relative; */
   text-decoration: none;
 }
 
@@ -436,21 +431,6 @@ ol {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
-/* .link-portfolio-item {
-  display: block;
-  position: relative;
-  text-decoration: none;
-  transition: box-shadow 250ms var(--timing-function);
-}
-
-.link-portfolio-item:hover,
-.link-portfolio-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-*/
 
 .portfolio-item-description {
   opacity: 0;
@@ -483,17 +463,6 @@ ol {
   position: relative;
   overflow: hidden;
 }
-
-/* .link-portfolio-box {
-  overflow: hidden;
-} */
-
-/* .link-portfolio-box:hover,
-.link-portfolio-box:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  overflow: hidden;
-} */
 
 .list.samples {
   display: flex;
@@ -618,7 +587,6 @@ ol {
 
 .footer-flex {
   display: flex;
-  /* align-items: baseline; */
 }
 
 .footer-socials {
@@ -794,8 +762,6 @@ ol {
   height: 20px;
 }
 
-/*  FORMS */
-
 .form {
   display: flex;
   flex-direction: column;
@@ -843,7 +809,6 @@ ol {
 }
 
 .form-input {
-  /* position: relative; */
   height: 40px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -995,15 +960,6 @@ ol {
   pointer-events: none;
 }
 
-/* .form-icon {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-
-  top: 29px;
-  left: 12px;
-} */
-
 .form-icon {
   position: relative;
   width: 18px;
@@ -1019,19 +975,7 @@ ol {
   fill: var(--brand-color);
 }
 
-/* .form-input:required {
-  border: 1px solid red;
-  outline: none;
-} */
-
-/**
-  |============================
-  | FOOTER FORM SUBSCRIPTION
-  |============================
-*/
-
 .footer-form {
-  /* display: block; */
   margin: 23px auto;
 }
 
@@ -1047,8 +991,6 @@ ol {
 }
 
 .footer-form-label {
-  /* margin-bottom: 20px; */
-
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -1091,7 +1033,6 @@ ol {
   width: 358px;
 
   margin-top: 20px;
-  /* margin-right: 12px; */
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1105,8 +1046,6 @@ ol {
 }
 
 .footer-form-input::placeholder {
-  /* padding: 15px auto 15px 16px; */
-
   font-size: 16px;
   line-height: 125%;
   letter-spacing: 0.03em;

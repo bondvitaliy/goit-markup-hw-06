@@ -583,15 +583,17 @@ ol {
 
 .footer-contact {
   margin-right: 70px;
+  flex-grow: 1;
 }
 
 .footer-flex {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-socials {
   margin-right: 93px;
-  padding: 15px 0 37px 0;
+  /* padding: 15px 0 37px 0; */
 }
 
 .footer-social-link {
@@ -755,6 +757,13 @@ ol {
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   cursor: pointer;
+
+  transition: fill 250ms var(--timing-function);
+}
+
+.button-modal:hover,
+.button-modal:focus {
+  fill: var(--brand-color);
 }
 
 .close {
@@ -767,13 +776,14 @@ ol {
 .form {
   display: flex;
   flex-direction: column;
-  margin: auto 40px;
+  /* margin: auto 40px; */
+  padding: 40px;
 }
 
 .form-heading {
   display: block;
 
-  margin: 40px auto 12px auto;
+  margin-bottom: 12px;
 
   font-weight: 700;
   font-size: 20px;
@@ -784,12 +794,20 @@ ol {
   color: var(--color-hd);
 }
 
-.form-label {
+.form-field {
   position: relative;
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 10px;
+}
+
+.form-label {
+  /* position: relative; */
 
   display: block;
-  margin-right: auto;
-  padding-bottom: 4px;
+  /* margin-right: auto; */
+  margin-bottom: 4px;
 
   font-size: 12px;
   line-height: calc(14 / 12);
@@ -800,8 +818,8 @@ ol {
 
 .form-label-comment {
   display: block;
-  margin-right: auto;
-  padding-bottom: 4px;
+  /* margin-right: auto; */
+  margin-bottom: 4px;
 
   font-size: 12px;
   line-height: calc(14 / 12);
@@ -811,15 +829,15 @@ ol {
 }
 
 .form-input {
+  cursor: pointer;
+
   height: 40px;
+  width: auto;
+
+  padding: 12px 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-
-  width: auto;
-  margin-bottom: 10px;
-
-  padding-left: 42px;
 
   transition: border 250ms var(--timing-function);
 }
@@ -830,9 +848,12 @@ ol {
   outline: none;
 }
 
+.form-field.text {
+  margin-bottom: 20px;
+}
+
 .form-item-comment {
   width: auto;
-  margin-bottom: 20px;
   resize: none;
 
   padding: 16px 12px;
@@ -853,7 +874,9 @@ ol {
 
 .form-checkbox {
   display: flex;
-  position: relative;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
 }
 
 .form-checkbox-icon {
@@ -861,7 +884,7 @@ ol {
   height: 15px;
 }
 
-.form-icon-check {
+/* .form-icon-check {
   width: 16px;
   height: 15px;
 }
@@ -869,9 +892,15 @@ ol {
 .form-icon-uncheck {
   width: 16px;
   height: 15px;
-}
+} */
 
 .form-agreement {
+  /* position: relative; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
@@ -880,8 +909,8 @@ ol {
 }
 
 .form-agreement-item {
-  margin-right: 9px;
-  margin-left: 12px;
+  /* margin-right: 9px;
+  margin-left: 12px; */
   opacity: 0;
 }
 
@@ -895,6 +924,17 @@ ol {
   color: var(--brand-color);
 }
 
+.form-agreement-text {
+  display: inline-block;
+  /* text-align: center; */
+}
+
+.form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .form-button-agreement {
   display: flex;
   justify-content: center;
@@ -906,7 +946,10 @@ ol {
 
   width: 200px;
   height: 50px;
-  margin: 30px auto 40px;
+  /* margin: 30px auto 40px; */
+  margin-top: 30px;
+  /* margin-left: auto;
+  margin-right: auto; */
 
   font-weight: 700;
   font-size: 16px;
@@ -935,9 +978,11 @@ ol {
 }
 
 .form-icon-check {
-  position: absolute;
+  /* position: absolute;
   top: 4px;
-  left: 10px;
+  left: 10px; */
+
+  margin-right: -16px;
 
   opacity: 0;
   width: 16px;
@@ -949,9 +994,13 @@ ol {
 }
 
 .form-icon-uncheck {
-  position: absolute;
+  /* position: absolute;
   top: 4px;
-  left: 10px;
+  left: 10px; */
+
+  /* order: -1; */
+
+  margin-right: 8px;
 
   opacity: 1;
   width: 16px;
@@ -963,11 +1012,11 @@ ol {
 }
 
 .form-icon {
-  position: relative;
+  position: absolute;
   width: 18px;
   height: 18px;
 
-  bottom: 40px;
+  top: 29px;
   left: 12px;
 
   transition: fill 250ms var(--timing-function);
@@ -977,9 +1026,9 @@ ol {
   fill: var(--brand-color);
 }
 
-.footer-form {
+/* .footer-form {
   margin: 23px auto;
-}
+} */
 
 .footer-form-sub {
   display: flex;
@@ -988,6 +1037,9 @@ ol {
 }
 
 .footer-form-text {
+  display: block;
+  margin-bottom: 20px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -1002,6 +1054,8 @@ ol {
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  margin-left: 12px;
 
   width: 200px;
   height: 50px;
@@ -1026,8 +1080,8 @@ ol {
   height: 50px;
   width: 358px;
 
-  margin-top: 20px;
-  margin-right: 12px;
+  /* margin-top: 20px;
+  margin-right: 12px; */
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));

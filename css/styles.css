@@ -877,6 +877,8 @@ ol {
   justify-content: center;
   align-items: center;
   /* position: relative; */
+
+  margin-bottom: 30px;
 }
 
 .form-checkbox-icon {
@@ -911,7 +913,18 @@ ol {
 .form-agreement-item {
   /* margin-right: 9px;
   margin-left: 12px; */
-  opacity: 0;
+  /* opacity: 0; */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .form-agreement-link {
@@ -947,7 +960,7 @@ ol {
   width: 200px;
   height: 50px;
   /* margin: 30px auto 40px; */
-  margin-top: 30px;
+  /* margin-top: 30px; */
   /* margin-left: auto;
   margin-right: auto; */
 
